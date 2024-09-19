@@ -332,7 +332,6 @@ app.get('/', async (c) => {
   let vault: Record<string, string> = {}
   let messages: MessageInfo[] = []
   let queries = c.req.queries() || {}
-  console.log('user payload in JSON:', data)
   try {
     vault = JSON.parse(process.env.secret || '')
   } catch (e) {
