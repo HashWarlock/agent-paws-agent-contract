@@ -6,6 +6,7 @@ export default defineConfig({
   sourcemap: true,
   clean: true,
   noExternal: ['*'],
+  platform: 'browser',
   //
   // for wapo
   //
